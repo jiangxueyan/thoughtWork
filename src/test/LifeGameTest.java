@@ -53,7 +53,7 @@ public class LifeGameTest {
 	public void shouldChangeAllPointSatus(){
 		boolean life[][] = {{false,true,false},{true,true,false}};
 		lifeGame = new Grid(2, 3, life);
-		lifeGame.changeAllNextStatus();
+		lifeGame.refrush();
 		boolean expected[][] = {{true,true,false},{true,true,false}};
 		assertThat(life, Is.is(expected));
 	}
